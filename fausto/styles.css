@@ -1,0 +1,14 @@
+body {
+    background-color:rgb(82, 78, 78);
+ }
+
+ h1,p {
+    color: white ;
+ }
+
+ .container {
+    background-color: black;
+    border: 5px solid rgb(255, 255, 255) ;
+    text-align: center;
+ 
+ }
