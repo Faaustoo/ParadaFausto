@@ -1,7 +1,7 @@
 /*/*$array = ['pera','manzana','frutilla','banana','naranja']
 
 /*mostrando un elemento del array directamente con la posicion*/
-console.log($array[1])
+/*console.log($array[1])
 
 /*recorriendo el array y mostrandolo completo(primera forma)*/
 /*for(i=0; i<$array.length; i++){
