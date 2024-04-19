@@ -31,7 +31,7 @@ function Personajes() {
                 <p>Género: ${data[0].gender}</p>
                 <img src="${data[0].image}" alt="${data[0].name}">
             `;
-            verificarGeneros(data[0].gender, data[].gender);
+            verificarGeneros(data[0].gender, data[0].gender);
             }
         
         verificarGeneros(data[0].gender, data[1].gender);
