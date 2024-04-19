@@ -9,10 +9,13 @@
 <body>
     <div class="container">
         <div class="buscar-container">
-            <h1>Buscar personajes</h1>
-            <input type="number" id="BuscarID" placeholder="ID del primer personaje">
-            <input type="number" id="BuscarID2" placeholder="ID del segundo personaje">
-            <button onclick="Personajes()">Buscar</button>
+            <fieldset class="field-container">
+                <legend>Personajes  Rick and Morty</legend>
+                <h1>Buscar personajes</h1>
+                <input type="number" id="BuscarID" placeholder="ID del primer personaje">
+                <input type="number" id="BuscarID2" placeholder="ID del segundo personaje">
+                <button onclick="Personajes()">Buscar</button>
+            </fieldset>
         </div>
         <div class="info-container">
             <div id="infoPersonaje" class="personaje-info"></div>

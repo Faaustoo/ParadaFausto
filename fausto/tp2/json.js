@@ -7,23 +7,38 @@ function Personajes() {
     .then(data => {
         const infoPersonaje1 = document.getElementById('infoPersonaje');
         const infoPersonaje2 = document.getElementById('infoPersonaje2');
-        infoPersonaje1.innerHTML = `
-            <h2>${data[0].name}</h2>
-            <p>Género: ${data[0].gender}</p>
-            <img src="${data[0].image}" alt="${data[0].name}">
-        `;
-        infoPersonaje2.innerHTML = `
-            <h2>${data[1].name}</h2>
-            <p>Género: ${data[1].gender}</p>
-            <img src="${data[1].image}" alt="${data[1].name}">
-        `;
-
+        if (idPersonaje1!=idPersonaje2){
+            infoPersonaje1.innerHTML = `
+                <h2>${data[0].name}</h2>
+                <p>Género: ${data[0].gender}</p>
+                <img src="${data[0].image}" alt="${data[0].name}">
+            `;
+            infoPersonaje2.innerHTML = `
+                <h2>${data[1].name}</h2>
+                <p>Género: ${data[1].gender}</p>
+                <img src="${data[1].image}" alt="${data[1].name}">
+            `;
+            verificarGeneros(data[0].gender, data[1].gender);
+        } else {
+            
+                infoPersonaje1.innerHTML = `
+                <h2>${data[0].name}</h2>
+                <p>Género: ${data[0].gender}</p>
+                <img src="${data[0].image}" alt="${data[0].name}">
+            `;
+            infoPersonaje2.innerHTML = `
+                <h2>${data[0].name}</h2>
+                <p>Género: ${data[0].gender}</p>
+                <img src="${data[0].image}" alt="${data[0].name}">
+            `;
+            verificarGeneros(data[0].gender, data[].gender);
+            }
+        
         verificarGeneros(data[0].gender, data[1].gender);
-    })
+})
     .catch(error => {
         console.error('Error al obtener los personajes:', error);
-    });
-}
+    });}
 
 function verificarGeneros(genero1, genero2) {
     const iconoGenero = document.getElementById('iconoGenero');

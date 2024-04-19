@@ -59,3 +59,8 @@ img {
     border-radius: 20px;
 }
 
+.field-container{
+    border-radius: 5px;
+    font-family: sans-serif;
+    
+}
