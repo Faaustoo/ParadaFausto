@@ -28,7 +28,7 @@ function BuscarPersonaje() {
 
 
 function map(latitude,longitude) {
-    var map = L.map('map').setView([latitude,longitude], 5);
+    var map = L.map('map').setView([latitude,longitude], 4);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
