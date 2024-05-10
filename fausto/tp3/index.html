@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>ingresar tres numeros</h2>
+    <div class="container-input">
+        
+        <div class="input1"> 
+            <input type="number" id="input1">
+            <button id="boton1" onclick="capture()" >Enviar</button>
+        </div>
+        <div class="input2"> 
+            <input type="number" id="input2">
+            <button id="boton2" onclick="capturedos()" >Enviar</button>    
+        </div>
+    </div>    
+    <div class="container-info">
+            <div class="info1">
+                <div id="info-boton1" ></div>
+            </div>
+            <div class="info2" >
+                <div id="info-boton2"></div>  
+            </div>
+    </div>
+    <div id="error"></div>
+
+    <script src="js/fn.js"></script>
+</body>
+</html>
